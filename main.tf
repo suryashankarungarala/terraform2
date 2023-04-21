@@ -1,14 +1,14 @@
 #this file consists of code for instances and sg
 provider "aws" {
 region = "ap-south-1"
-access_key = "AKIAWLAREJ3GMCJ6SOPY"
-secret_key = "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"
+access_key = "AKIA3MPAYOVQKPSD73HJ"
+secret_key = "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"
 }
 
 resource "aws_instance" "one" {
-  ami             = "ami-0d81306eddc614a45"
+  ami             = "ami-0fdea1353c525c182"
   instance_type   = "t2.micro"
-  key_name        = "rrraham"
+  key_name        = "shankar"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-south-1a"
   user_data       = <<EOF
@@ -25,9 +25,9 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami             = "ami-0d81306eddc614a45"
+  ami             = "ami-0fdea1353c525c182"
   instance_type   = "t2.micro"
-  key_name        = "rrraham"
+  key_name        = "shankar"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-south-1b"
   user_data       = <<EOF
@@ -44,9 +44,9 @@ EOF
 }
 
 resource "aws_instance" "three" {
-  ami             = "ami-0d81306eddc614a45"
+  ami             = "ami-0fdea1353c525c182"
   instance_type   = "t2.micro"
-  key_name        = "rrraham"
+  key_name        = "shankar"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-south-1b"
   tags = {
@@ -55,9 +55,9 @@ resource "aws_instance" "three" {
 }
 
 resource "aws_instance" "four" {
-  ami             = "ami-0d81306eddc614a45"
+  ami             = "ami-0fdea1353c525c182"
   instance_type   = "t2.micro"
-  key_name        = "rrraham"
+  key_name        = "shankar"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-south-1b"
   tags = {
@@ -90,11 +90,11 @@ resource "aws_security_group" "five" {
 }
 
 resource "aws_s3_bucket" "six" {
-  bucket = "rahamshaikterra77889900"
+  bucket = "suryaterra77889900"
 }
 
 resource "aws_iam_user" "seven" {
-name = "rahamuser11" 
+name = "komalisurya598" 
 }
 
 resource "aws_ebs_volume" "eight" {
