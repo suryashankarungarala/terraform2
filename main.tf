@@ -5,6 +5,7 @@ access_key = "AKIA3MPAYOVQKPSD73HJ"
 secret_key = "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"
 }
 
+
 resource "aws_instance" "one" {
   ami             = "ami-0fdea1353c525c182"
   instance_type   = "t2.micro"
